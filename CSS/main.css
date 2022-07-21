@@ -1,0 +1,123 @@
+/* Start Variables */
+:root {
+    --Primary-Dark-cyan: hsl(185, 75%, 39%);
+    --Primary-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Primary-Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Neutral-Dark-gray: hsl(0, 0%, 59%);
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Rules */
+
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: var(--Primary-Dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 25vw top -80vh, left 32vw bottom -35vh;
+    background-position: right 25vw top -675px, left 32vw top 310px;
+}
+@media (min-width: 992px) {
+    body {
+        background-position: right 52vw top -49vh, left 49vw top -12vh;
+        background-position: right 52vw top -520px, left 52vw top 280px;
+    }
+}
+.container {
+    max-width: 400px;
+}
+.container main {
+    margin-top: 150px;
+}
+.container main > img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+}
+.container main .content  {
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    padding-top: 70px;
+    text-align: center;
+    position: relative;
+}
+.container main .content .avatar   {
+    border: 4px solid white;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container main .content .avatar img  {
+    width: 100%;
+    border-radius: 50%;
+}
+.container main .content h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Primary-Very-dark-desaturated-blue);
+}
+.container main .content h1 span {
+    color: var(--Primary-Dark-grayish-blue);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.container main .content p {
+    color: var(--Primary-Dark-grayish-blue);
+    margin-top: 10px;
+}
+.container main .content .info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    border-top: 1px solid var(--Neutral-Dark-gray);
+    margin-top: 30px;
+}
+.container main .content .info > div span:first-child {
+    display: block;
+    color: var(--Primary-Very-dark-desaturated-blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.container main .content .info > div span:last-child {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--Primary-Dark-grayish-blue);
+}
